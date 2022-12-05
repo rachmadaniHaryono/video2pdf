@@ -2,7 +2,7 @@
 name = "video2pdf"
 version = "0.1.0"
 description = "Converts a video presentation into a deck of pdf slides by capturing screenshots of unique frames."
-authors = ["kaushikj <kaushikjjj@gmail.com>"]
+authors = ["kaushik jeyaraman <kaushikjjj@gmail.com>"]
 readme = "README.md"
 packages = [ 
 {include="video2pdfslides.py"},
