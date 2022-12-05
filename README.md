@@ -17,6 +17,11 @@ There are two sample video avilable in "./input", you can test the code using th
 <li>python video2pdfslides.py "./input/Test Video 1.mp4" (4 unique slide)
 <li>python video2pdfslides.py "./input/Test Video 2.mp4" (19 unique slide)
 
+To easily run the program for youtube video after copying the link
+
+```console
+(copyq clipboard | xargs yt-dlp -f "bv") && video2pdfslides "fzf"
+```
 
 # More
 The default parameters works for a typical video presentation. But if the video presentation has lots of animations, the default parametrs won't give a good results, you may notice duplicate/missing slides. Don't worry, you can make it work for any video presentation, even the ones with animations, you just need to fine tune and figure out the right set of parametrs, The 3 most important parameters that I would recommend to get play around is "MIN_PERCENT", "MAX_PERCENT", "FGBG_HISTORY". The description of these variables can be found in code comments.
