@@ -131,7 +131,7 @@ def convert_screenshots_to_pdf(output_folder_screenshot_path):
     print('pdf saved at', output_pdf_path)
 
 
-if __name__ == "__main__":
+def main():
     
 #     video_path = "./input/Test Video 2.mp4"
 #     choice = 'y'
@@ -158,3 +158,7 @@ if __name__ == "__main__":
 
     if choice == 'y':
         convert_screenshots_to_pdf(output_folder_screenshot_path)
+
+
+if __name__ == "__main__":
+    main()
