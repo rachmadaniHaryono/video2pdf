@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "video2pdf"
+version = "0.1.0"
+description = "Converts a video presentation into a deck of pdf slides by capturing screenshots of unique frames."
+authors = ["kaushikj <kaushikjjj@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+imutils = ">=0.5.4"
+opencv-python = ">=4.5.2.52"
+img2pdf = ">=0.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+video2pdf = 'video2pdf:main'
