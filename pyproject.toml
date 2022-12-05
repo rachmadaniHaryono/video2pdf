@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "Converts a video presentation into a deck of pdf slides by capturing screenshots of unique frames."
 authors = ["kaushikj <kaushikjjj@gmail.com>"]
 readme = "README.md"
+packages = [ 
+{include="video2pdfslides.py"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -17,4 +20,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-video2pdf = 'video2pdf:main'
+video2pdfslides = 'video2pdfslides:main'
